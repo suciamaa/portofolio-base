@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 4px 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --primary-color:#FEEE91;
+    --secondary-color:#7ABA78;
+    --hover-primary:#FED049;
+    --hover-secondary:#A4D0A4;
+    --text-color:#3C3D37;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important; 
+    border-color: var(--primary-color) !important; 
+    color: var(--text-color) !important;
+}
+
+.btn-primary:hover{
+    background-color: var(--hover-primary) !important; 
+    border: var(--hover-primary) !important; 
+}
+
+.btn-secondary {
+    background-color: #FFFF !important; 
+    border-color: var(--secondary-color) !important; 
+    color: var(--text-color) !important;
+}
+
+.btn-secondary:hover{
+    background-color: var(--hover-secondary) !important; 
+    border-color: var(--hover-secondary) !important; 
+}
+
+section{
+    padding: 50px 10%;
+}
+
+.navbar .container-fluid{
+    font-size:14px;
+}
+.nav .nav-link{
+    text-decoration:none;
+    color: var(--text-color);
+}
+
+.nav .nav-link:hover{
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.dashboard {
+    padding:32px 52px;
+    color: var(--text-color);
+}
+
+.dashboard .profile-img{
+    margin-left: 100px;
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+.tools {
+    padding:32px 64px;
+}
+.tools .bordered-container {
+    border: 0.2px solid;
+    border-color: #B2B2B2;
+    border-radius: 8px; 
+}
+.tools .tools-img{
+    width:150%;
+    height:auto;
+}
+.about-me{
+    padding:32px 52px;
+}
+.about-me .btn-primary, .projects .btn-primary{
+    margin-left: 12px;
+}
+.projects {
+    padding:32px 0px;
+}
+
+.projects .card {
+    margin: auto;
+}
+
+.quote{
+    padding: 0px 0px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
